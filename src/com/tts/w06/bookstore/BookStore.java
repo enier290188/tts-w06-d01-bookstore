@@ -1,4 +1,6 @@
-package com.tts.w06;
+package com.tts.w06.bookstore;
+
+import com.tts.w06.Utils;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -108,7 +110,7 @@ public class BookStore {
 
     private void loadTitles() {
         try {
-            Utils.loadStringsToArray(this.titles);
+            Utils.loadStringsToArray(this.titles, "src/com/tts/w06/bookstore/BookTitles.txt");
         } catch (IOException e) {
             // for now simply init the array to zero
             System.out.println("Could not initialize the titles");
@@ -122,22 +124,24 @@ public class BookStore {
     }
 
     // Know the total number of books the store has.
-    public int totalOfBooks(){
+    public int totalOfBooks() {
         return this.titles.size();
     }
+
     // See if the store has a specific title.
-    public boolean hasTitle(String title){
-        for (String titleItem: this.titles) {
-            if(titleItem.equals(title)){
+    public boolean hasTitle(String title) {
+        for (String titleItem : this.titles) {
+            if (titleItem.equals(title)) {
                 return true;
             }
         }
         return false;
     }
+
     // A word appears anywhere in a title.
-    public boolean wordAppearAnywhereInATitle(String word){
-        for (String titleItem: this.titles) {
-            if(titleItem.contains(word)){
+    public boolean wordAppearAnywhereInATitle(String word) {
+        for (String titleItem : this.titles) {
+            if (titleItem.contains(word)) {
                 return true;
             }
         }

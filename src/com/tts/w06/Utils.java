@@ -8,8 +8,8 @@ import java.util.ArrayList;
 import java.util.stream.Stream;
 
 public class Utils {
-    public static void loadStringsToArray(ArrayList<String> arrList) throws IOException {
-        Path path = Paths.get("src/com/tts/w06/BookTitles.txt");
+    public static void loadStringsToArray(ArrayList<String> arrList, String pathString) throws IOException {
+        Path path = Paths.get(pathString);
         arrList.clear();
 
         // The stream file will also be closed here
