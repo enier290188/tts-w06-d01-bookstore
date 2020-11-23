@@ -1,0 +1,10 @@
+Programming in Java
+Java Pearls
+Database Design
+Practical Enterprise Software Development Techniques
+Just Enough Database
+Just Enough Debugging
+Just Enough Requirements and Documentation
+Python Crash Course
+Cucumber and Gherkin for Java
+Machine Learning with Python
